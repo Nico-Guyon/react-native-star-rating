@@ -1,5 +1,12 @@
 'use strict';
-import React, { Component, PropTypes } from 'react'
+
+
+import PropTypes from 'prop-types'
+
+import React, {
+  Component,
+} from 'react';
+
 import {
   View,
   StyleSheet,
@@ -17,8 +24,8 @@ export default class StarRating extends Component {
   static propTypes = {
     maxStars: PropTypes.number,
     rating: PropTypes.number,
-    unSelectStar: PropTypes.number.isRequired,
-    selectStar: PropTypes.number.isRequired,
+    unSelectStar: PropTypes.object.isRequired,
+    selectStar: PropTypes.object.isRequired,
     valueChanged: PropTypes.func,
     starSize: PropTypes.number,
     interitemSpacing: PropTypes.number,
